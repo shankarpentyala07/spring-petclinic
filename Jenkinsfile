@@ -5,6 +5,11 @@ pipeline{
         maven 'maven-3.8.4'
     }
     stages{
+            stage('Auto Trigger from Git push test'){
+                           steps{
+                                 echo 'Auto trigger successful'
+                                }
+                        }
 
            stage('Compile'){
                steps{
