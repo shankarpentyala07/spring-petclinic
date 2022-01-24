@@ -9,20 +9,20 @@ pipeline{
            stage('Compile'){
                steps{
                      echo 'Compiling the application'
-                      ./mvnw compile
+                      sh './mvnw compile'
                     }
             }
         stage('Test'){
                 steps{
                     echo 'Testing the application'
-                    ./mvnw test
+                    sh './mvnw test'
                     }
                 }
 
         stage('Build'){
             steps{
                 echo 'Building the application'
-                ./mvnw package
+                sh './mvnw package'
             }
         }
 
