@@ -7,7 +7,7 @@ pipeline{
     stages{
             stage('Auto Trigger from Git push test'){
                            steps{
-                                 echo 'Auto trigger successful'
+                                 echo 'Auto trigger successful 2'
                                 }
                         }
 
